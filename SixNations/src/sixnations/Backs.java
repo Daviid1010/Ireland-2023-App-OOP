@@ -25,50 +25,62 @@ public class Backs extends Player {
         this.topSpeed = topSpeed;
     }
 
+    @Override
     public int getCaps() {
         return caps;
     }
 
+    @Override
     public void setCaps(int caps) {
         this.caps = caps;
     }
 
+    @Override
     public int getTries() {
         return tries;
     }
 
+    @Override
     public void setTries(int tries) {
         this.tries = tries;
     }
 
+    @Override
     public String getClub() {
         return club;
     }
 
+    @Override
     public void setClub(String club) {
         this.club = club;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public void setName(String name) {
         this.name = name;
     }
 
+    @Override
     public int getAge() {
         return age;
     }
 
+    @Override
     public void setAge(int age) {
         this.age = age;
     }
 
+    @Override
     public String getCountry() {
         return country;
     }
 
+    @Override
     public void setCountry(String country) {
         this.country = country;
     }
