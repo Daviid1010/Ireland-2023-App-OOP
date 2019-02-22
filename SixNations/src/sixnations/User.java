@@ -9,35 +9,32 @@ import java.io.Serializable;
 
 /**
  *
- * @author Davy Sheehy
+ * @author x16325901
  */
-public class TeamMember implements Serializable{
-    protected String name;
-    protected int age;
-    protected String country;
-
-
-
-    public TeamMember(String name,int age, String country) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
-    }
+public class User implements Serializable {
     
+    private String name;
+    private String country;
+    private String password;
+    
+    public User () {
+        name = new String();
+        country = new String();
+        password = new String();
+    }
+
+    public User(String name, String country, String password) {
+        this.name = name;
+        this.country = country;
+        this.password = password;
+    }
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public String getCountry() {
@@ -47,7 +44,13 @@ public class TeamMember implements Serializable{
     public void setCountry(String country) {
         this.country = country;
     }
-    
-    
-    
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+     
 }

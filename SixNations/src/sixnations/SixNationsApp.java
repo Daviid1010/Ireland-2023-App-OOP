@@ -16,6 +16,14 @@ public class SixNationsApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Login log = new Login();
+        log.setVisible(true);
+        
+        
+        
+        //SixNations six = new SixNations(log.getCurrentUser());
+        //Team userTeam = six.GetUserTeam();
     }
     
 }

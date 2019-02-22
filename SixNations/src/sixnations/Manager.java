@@ -5,6 +5,7 @@
  */
 package sixnations;
 
+
 /**
  *
  * @author Davy Sheehy
@@ -14,7 +15,6 @@ public class Manager extends TeamMember {
     private int wins;
     private int losses;
     private int draws;
-    private double winPercent;
 
     public Manager(String name, int age, String country) {
         super(name, age, country);
@@ -27,15 +27,6 @@ public class Manager extends TeamMember {
         this.wins = wins;
         this.losses = losses;
         this.draws = draws;
-        winPercent = wins / (wins + losses + draws);
-    }
-
-    public double getWinPercent() {
-        return winPercent;
-    }
-
-    public void setWinPercent(double winPercent) {
-        this.winPercent = winPercent;
     }
 
     public int getWins() {
@@ -90,6 +81,12 @@ public class Manager extends TeamMember {
     @Override
     public void setCountry(String country) {
         this.country = country;
+    }
+    
+    public String getInfo(String name,int age,String country,int wins, int losses, int draws) {
+        String info;
+        info = "Name: " + name + "\nAge: " + age + "\nNationality: " + country + "\nWins: " + wins + "\nLosses: " + losses + "\nDraws: " + draws;
+        return info;
     }
 
 }
